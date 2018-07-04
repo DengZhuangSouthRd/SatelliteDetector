@@ -27,7 +27,7 @@ class DataDecoder(object):
   __metaclass__ = ABCMeta
 
   @abstractmethod
-  def decode(self, data):
+  def decode(self, data: object) -> object:
     """Return a single image and associated labels.
 
     Args:

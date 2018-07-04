@@ -71,7 +71,7 @@ class BoxCoder(object):
     with tf.name_scope('Encode'):
       return self._encode(boxes, anchors)
 
-  def decode(self, rel_codes, anchors):
+  def decode(self, rel_codes: object, anchors: object) -> object:
     """Decode boxes that are encoded relative to an anchor collection.
 
     Args:

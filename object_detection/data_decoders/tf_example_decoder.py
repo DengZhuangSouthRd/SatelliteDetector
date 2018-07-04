@@ -264,7 +264,7 @@ class TfExampleDecoder(data_decoder.DataDecoder):
     self.items_to_handlers[
         fields.InputDataFields.groundtruth_classes] = label_handler
 
-  def decode(self, tf_example_string_tensor):
+  def decode(self, tf_example_string_tensor: object) -> object:
     """Decodes serialized tensorflow example and returns a tensor dictionary.
 
     Args:
